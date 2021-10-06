@@ -1,49 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --primary-color:#4338CA;
-    --off-white: #f3f4f6;
-    --dark-grey: #6B728B;
+ --primary-color: #00B0FF; 
+ --dark-grey: #6B728B; 
+ --off-white: #F8F0E3; 
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
 }
 
 hr {
     margin: 2rem 0rem;
 }
 
-/** container **/
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.container-center{
+.container-center {
     max-width: 600px;
     margin: auto;
 }
 
-/** links **/
 .link {
     text-decoration: none;
     padding: 0.5rem 1rem;
+    max-width: 140px;
 }
 
 .link-primary {
-    max-width: 140px;
-    background-color: var(--primary-color);
     border-radius: 1rem;
+    background-color: var(--primary-color);
     color: white;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 .link-secondary {
-    max-width: 140px;
+    border-radius: 1rem;
     color: var(--primary-color);
-    border-radius: 2rem;
     border: 1px solid var(--primary-color);
     margin: 1rem;
 }
@@ -58,65 +55,63 @@ hr {
     padding: 0rem 0.5rem;
 }
 
-.navigation{
-    background-color: var(--primary-color);    
+.navigation {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
 }
 
-.navigation .nav-brand{
+.navigation .nav-brand {
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: x-large;
 }
 
-.navigation .link{
+.navigation .link {
     color: white;
 }
 
-.navigation .nav-pills{
+.navigation .nav-pills {
     text-align: right;
-    margin: 0.6rem 1rem;
+    margin-left: auto;
 }
 
 .navigation .link-active {
     font-weight: bold;
 }
 
-.hero{
+.hero {
     padding: 2rem;
 }
 
-.hero-index{
-    padding-top: 5rem;
-}
-
-.hero .hero-img{
+.hero .hero-img {
     max-width: 90%;
     width: 550px;
     display: block;
     margin: auto;
 }
 
-.hero .hero-heading{
+.hero .hero-heading {
     text-align: center;
     padding: 1rem;
-    color: var(--dark-grey);
+    margin: auto;
 }
 
-.hero .heading-inverted {
+.hero .hero-inverted {
     color: var(--primary-color);
 }
 
-.section{
+.section {
     padding: 2rem;
 }
 
-.section h3{
+.section h3 {
     text-align: center;
 }
 
-.ow{
+.ow {
     background-color: var(--off-white);
 }
 
@@ -125,16 +120,20 @@ hr {
     padding: 2rem 1rem;
     text-align: center;
     color: white;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
-.footer .footer-header{
+.footer .footer-header {
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
 }
 
-.footer .link{
+.footer .link {
     color: white;
+}
+
+.footer .footer-copyright {
+    font-size: x-small;
 }
 
 .footer ul{
